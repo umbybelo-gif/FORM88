@@ -1,0 +1,12 @@
+{
+  "name":"FORM 88 — Nutrition Protocol",
+  "short_name":"FORM 88",
+  "description":"Piano alimentare personale FORM 88",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#121210",
+  "theme_color":"#121210",
+  "lang":"it",
+  "icons":[{"src":"./icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
