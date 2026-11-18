@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#121210">
+<title>FORM 88 — Nutrition Protocol</title>
+<meta name="description" content="Piano alimentare personale FORM 88">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#121210;--card:#1a1a17;--panel:#22221e;--text:#f4efe4;--muted:#a8a295;--bronze:#b48755;--bronze2:#d2aa78;--line:#34332d;--danger:#d36b64;--r:20px}
+*{box-sizing:border-box}html{background:var(--bg)}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at top,#262219 0,#121210 34%);color:var(--text);min-height:100vh}
+button,input{font:inherit}.app{max-width:520px;margin:auto;padding:24px 18px 110px}.brand{display:flex;align-items:center;gap:12px;margin-bottom:24px}.mark{width:46px;height:46px;border:1px solid var(--bronze);border-radius:15px;display:grid;place-items:center;font-family:Georgia,serif;color:var(--bronze2);font-size:18px}.brand small,.eyebrow{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted)}h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;margin:0}.brand h1{font-size:23px}.hero{background:linear-gradient(145deg,#242118,#181713);border:1px solid #3b352b;border-radius:28px;padding:22px;box-shadow:0 18px 50px rgba(0,0,0,.28)}.hero h2{font-size:37px;line-height:.98;margin-top:7px}.hero p{color:var(--muted);line-height:1.45;font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}.stat,.card{background:rgba(28,28,25,.93);border:1px solid var(--line);border-radius:var(--r);padding:16px}.stat b{display:block;font-family:Georgia,serif;font-weight:400;font-size:26px}.stat span{font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase}.section{margin-top:18px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:10px}.section-head h2{font-size:24px}.section-head span{font-size:11px;color:var(--muted)}.meal{padding:17px}.meal-top{display:flex;gap:12px;align-items:flex-start}.letter{width:34px;height:34px;border-radius:50%;border:1px solid #66513a;color:var(--bronze2);display:grid;place-items:center;font-family:Georgia,serif}.meal h3{font-size:19px}.meta{font-size:11px;color:var(--bronze2);margin-top:4px}.items{margin:12px 0 0;padding:0;list-style:none;color:#d4cec1;font-size:13px;line-height:1.65}.checkrow{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.checkrow:last-child{border-bottom:0}.check{width:22px;height:22px;border-radius:7px;border:1px solid #5b574f;background:transparent;color:#121210;display:grid;place-items:center}.check.on{background:var(--bronze2);border-color:var(--bronze2)}.check.on:after{content:"✓";font-weight:800}.done{text-decoration:line-through;color:#716d64}.pillbar{display:flex;gap:7px;overflow:auto;padding-bottom:3px}.pill{border:1px solid var(--line);background:#181815;color:var(--muted);padding:9px 12px;border-radius:999px;white-space:nowrap;font-size:12px}.pill.active{border-color:#765b3e;color:var(--text);background:#2a241b}.inputs{display:grid;grid-template-columns:1fr 1fr;gap:9px}.input{width:100%;background:#141411;border:1px solid var(--line);color:var(--text);border-radius:13px;padding:12px;outline:none}.input:focus{border-color:var(--bronze)}.btn{width:100%;margin-top:10px;border:0;border-radius:14px;background:var(--bronze);color:#17130f;padding:13px;font-weight:750}.chart{height:130px;margin-top:12px;position:relative}.chart svg{width:100%;height:100%}.listcat{margin-top:12px}.listcat h3{font-size:18px;margin-bottom:2px}.qty{margin-left:auto;color:var(--muted);font-size:11px}.progress{height:6px;background:#0e0e0c;border-radius:99px;overflow:hidden;margin-top:12px}.progress>div{height:100%;background:var(--bronze);width:0}.note{font-size:11px;color:var(--muted);line-height:1.5}.nav{position:fixed;z-index:10;left:50%;bottom:12px;transform:translateX(-50%);width:min(calc(100% - 22px),500px);display:grid;grid-template-columns:repeat(5,1fr);background:rgba(22,22,19,.92);backdrop-filter:blur(18px);border:1px solid #36342f;border-radius:20px;padding:7px}.nav button{border:0;background:transparent;color:#858178;padding:9px 3px;border-radius:14px;font-size:10px}.nav button.active{background:#2a261f;color:var(--bronze2)}.page{display:none}.page.active{display:block}.out-card{border-color:#5a4834}.smallbtn{border:1px solid var(--line);background:#181815;color:var(--muted);border-radius:999px;padding:7px 10px;font-size:11px}@media(min-width:700px){.app{padding-top:42px}.hero{padding:28px}}
+</style>
+</head>
+<body>
+<main class="app">
+  <header class="brand"><div class="mark">F88</div><div><small>Nutrition protocol</small><h1>FORM 88</h1></div></header>
+
+  <section id="home" class="page active">
+    <div class="hero"><div class="eyebrow">Obiettivo personale</div><h2>98 → 88 kg</h2><p>Perdere grasso, mantenere massa muscolare e costruire una forma più proporzionata. Target iniziale da rivalutare sui dati reali.</p>
+      <div class="grid"><div class="stat"><b>2.300</b><span>kcal / giorno</span></div><div class="stat"><b>180 g</b><span>proteine</span></div><div class="stat"><b>7.5–8k</b><span>passi target</span></div><div class="stat"><b>3</b><span>pasti principali</span></div></div>
+    </div>
+    <div class="section"><div class="section-head"><h2>Oggi</h2><span id="today"></span></div><div class="card" id="todayChecks"></div></div>
+    <div class="section"><div class="section-head"><h2>Regola chiave</h2></div><div class="card note">Le calorie sono un punto di partenza, non una prescrizione immutabile. Guarda la media peso di 7 giorni; se resta piatta per 2 settimane, correggi leggermente calorie o movimento. Gli esami ematici o indicazioni mediche possono richiedere modifiche.</div></div>
+  </section>
+
+  <section id="pasti" class="page">
+    <div class="section-head"><div><div class="eyebrow">Schema modulare</div><h2>Pasti</h2></div></div>
+    <div class="pillbar" id="mealTabs"></div>
+    <div id="mealList" class="section"></div>
+  </section>
+
+  <section id="turni" class="page">
+    <div class="section-head"><div><div class="eyebrow">Lavoro a turni</div><h2>Turni</h2></div></div>
+    <div class="card"><h3>Pranzo fuori</h3><ul class="items"><li>Colazione FORM 88 a casa</li><li>Pasto fuori controllato a pranzo</li><li>Cena FORM 88 a casa</li></ul></div>
+    <div class="card section"><h3>Cena fuori</h3><ul class="items"><li>Colazione FORM 88 a casa</li><li>Pranzo FORM 88 a casa</li><li>Pasto fuori controllato a cena</li></ul></div>
+    <div class="card section out-card"><div class="eyebrow">Pasto fuori controllato</div><h3 style="margin-top:5px">Una struttura, non una sequenza</h3><ul class="items"><li>Proteina: 180–220 g circa</li><li>Una sola fonte principale di carboidrati</li><li>Verdura gradita</li><li>Condimento misurato quando possibile</li><li>Evita l'accumulo automatico di pane + grissini + primo + secondo + dessert</li></ul></div>
+    <div class="card section"><h3>Weekend</h3><ul class="items"><li>1 pasto libero, non 2 giornate libere</li><li>Gli altri pasti restano normali</li><li>Niente digiuno punitivo il giorno dopo</li></ul></div>
+  </section>
+
+  <section id="track" class="page">
+    <div class="section-head"><div><div class="eyebrow">Dati, non sensazioni</div><h2>Track</h2></div></div>
+    <div class="card"><div class="inputs"><input class="input" id="weight" inputmode="decimal" placeholder="Peso kg"><input class="input" id="steps" inputmode="numeric" placeholder="Passi"></div><button class="btn" id="saveTrack">Salva registrazione</button></div>
+    <div class="grid"><div class="stat"><b id="avg7">—</b><span>media 7 gg kg</span></div><div class="stat"><b id="delta7">—</b><span>vs 7 gg prec.</span></div><div class="stat"><b id="steps7">—</b><span>passi medi 7 gg</span></div><div class="stat"><b id="countTrack">0</b><span>registrazioni</span></div></div>
+    <div class="card section"><h3>Andamento</h3><div class="chart"><svg id="chart" viewBox="0 0 320 120"></svg></div></div>
+    <div class="card section" id="trackList"></div>
+  </section>
+
+  <section id="spesa" class="page">
+    <div class="section-head"><div><div class="eyebrow">Settimana</div><h2>Spesa</h2></div><button class="smallbtn" id="resetShop">Reset</button></div>
+    <div class="card"><div style="display:flex;justify-content:space-between"><span class="eyebrow">Completamento</span><strong id="shopPct">0%</strong></div><div class="progress"><div id="shopBar"></div></div></div>
+    <div id="shopList"></div>
+  </section>
+</main>
+
+<nav class="nav" aria-label="Navigazione principale">
+  <button data-page="home" class="active">Home</button><button data-page="pasti">Pasti</button><button data-page="turni">Turni</button><button data-page="track">Track</button><button data-page="spesa">Spesa</button>
+</nav>
+<script>
+const MEALS={
+  "Colazione":[
+    {l:"A",n:"Pane, skyr e burro d'arachidi",k:"~700 kcal · ~54 g proteine",i:["Pane integrale 100 g","Skyr 250 g","Burro d'arachidi 20 g","Banana 150 g","Albumi 100 g"]},
+    {l:"B",n:"Uova, pane e skyr",k:"~690 kcal · ~64 g proteine",i:["Uova 3","Albumi 200 g","Pane 80 g","Skyr 150 g","Mela 150 g"]},
+    {l:"C",n:"Bowl avena proteica",k:"~710 kcal · ~56 g proteine",i:["Avena 80 g","Skyr 350 g","Burro d'arachidi 20 g","Banana 100 g"]}
+  ],
+  "Pranzo":[
+    {l:"A",n:"Pasta, tacchino, broccoli",k:"~820 kcal · ~76 g proteine",i:["Pasta integrale 90 g","Tacchino 220 g","Broccoli 250 g","Olio EVO 10 g","Mandarini 150 g"]},
+    {l:"B",n:"Riso, pollo, peperoni",k:"~810 kcal · ~61 g proteine",i:["Riso 90 g","Pollo 220 g","Peperoni 250 g","Olio EVO 10 g","Mela 150 g"]},
+    {l:"C",n:"Patate, manzo, carote",k:"~820 kcal · ~52 g proteine",i:["Patate 320 g","Manzo magro 200 g","Carote 200 g","Olio EVO 10 g","Mandarini 150 g"]},
+    {l:"D",n:"Lenticchie, tonno, pane",k:"~815 kcal · ~71 g proteine",i:["Lenticchie cotte 200 g","Tonno al naturale 160 g","Pane 100 g","Peperoni 200 g","Olio EVO 10 g"]}
+  ],
+  "Cena":[
+    {l:"A",n:"Salmone, patate, cavolfiore",k:"~820 kcal · ~47 g proteine",i:["Salmone 160 g","Patate 350 g","Cavolfiore 250 g","Pane 30 g","Mandarini 150 g"]},
+    {l:"B",n:"Pasta, pesce bianco, broccoli",k:"~800 kcal · ~72 g proteine",i:["Pasta 90 g","Pesce bianco 250 g","Broccoli 250 g","Olio EVO 10 g","Mela 150 g"]},
+    {l:"C",n:"Riso, tacchino, cavolfiore",k:"~800 kcal · ~67 g proteine",i:["Riso 90 g","Tacchino 220 g","Cavolfiore 250 g","Olio EVO 10 g","Mandarini 150 g"]}
+  ]
+};
+const SHOP={
+"Proteine":[["Tacchino","~900 g"],["Pollo","~450 g"],["Manzo magro","~200 g"],["Tonno al naturale","~320 g sgocciolato"],["Pesce bianco","~750 g"],["Salmone","~320 g"],["Uova","6"],["Albumi","~700 ml"],["Skyr / yogurt greco 0%","~1,75 kg"]],
+"Carboidrati":[["Pasta","~450 g"],["Riso","~360 g"],["Pane integrale","~750 g"],["Patate","~1,1 kg"],["Avena","~160 g"],["Lenticchie cotte","~400 g"]],
+"Verdure":[["Broccoli","~1,25 kg"],["Cavolfiore","~1 kg"],["Peperoni","~900 g"],["Carote","~200 g"]],
+"Frutta":[["Banane","~5"],["Mele","~7"],["Mandarini","~1 kg"]],
+"Dispensa":[["Olio EVO","~150 ml"],["Burro d'arachidi","~100 g"],["Grana","facoltativo"]]
+};
+const LS=(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},SS=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+const dateKey=(d=new Date())=>{const p=n=>String(n).padStart(2,"0");return d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate())};
+document.getElementById("today").textContent=new Intl.DateTimeFormat("it-IT",{weekday:"short",day:"2-digit",month:"short"}).format(new Date());
+function switchPage(id){document.querySelectorAll(".page").forEach(x=>x.classList.toggle("active",x.id===id));document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.page===id));window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll(".nav button").forEach(b=>b.onclick=()=>switchPage(b.dataset.page));
+function renderToday(){let done=LS("f88:today:"+dateKey(),[]),names=["Colazione","Pranzo","Cena","Passi ≥ 7.500"];todayChecks.innerHTML=names.map((n,i)=>'<div class="checkrow"><button class="check '+(done.includes(i)?"on":"")+'" data-i="'+i+'"></button><span class="'+(done.includes(i)?"done":"")+'">'+n+'</span></div>').join("");todayChecks.querySelectorAll("button").forEach(b=>b.onclick=()=>{let i=+b.dataset.i,d=LS("f88:today:"+dateKey(),[]);d=d.includes(i)?d.filter(x=>x!==i):[...d,i];SS("f88:today:"+dateKey(),d);renderToday()})}
+renderToday();
+let mealCat="Colazione";function renderMeals(){mealTabs.innerHTML=Object.keys(MEALS).map(k=>'<button class="pill '+(k===mealCat?"active":"")+'" data-k="'+k+'">'+k+"</button>").join("");mealTabs.querySelectorAll("button").forEach(b=>b.onclick=()=>{mealCat=b.dataset.k;renderMeals()});mealList.innerHTML=MEALS[mealCat].map(m=>'<article class="card meal section"><div class="meal-top"><div class="letter">'+m.l+'</div><div><h3>'+m.n+'</h3><div class="meta">'+m.k+'</div></div></div><ul class="items">'+m.i.map(x=>"<li>"+x+"</li>").join("")+"</ul></article>").join("")}renderMeals();
+function shift(s,n){let d=new Date(s+"T12:00:00");d.setDate(d.getDate()+n);return d.toISOString().slice(0,10)}function avg(a){return a.length?a.reduce((x,y)=>x+y,0)/a.length:null}
+function stats(){let E=LS("f88:track",[]),t=dateKey(),cur=E.filter(e=>e.date>=shift(t,-6)&&e.date<=t),prev=E.filter(e=>e.date>=shift(t,-13)&&e.date<=shift(t,-7)),w=a=>avg(a.flatMap(e=>e.weight?[e.weight]:[])),s=a=>avg(a.flatMap(e=>e.steps?[e.steps]:[])),cw=w(cur),pw=w(prev),st=s(cur);avg7.textContent=cw?cw.toFixed(1).replace(".",","):"—";delta7.textContent=cw&&pw?((cw-pw)>0?"+":"")+(cw-pw).toFixed(1).replace(".",","):"—";steps7.textContent=st?Math.round(st).toLocaleString("it-IT"):"—";countTrack.textContent=E.length;renderChart(E);trackList.innerHTML=[...E].reverse().slice(0,8).map(e=>'<div class="checkrow"><span>'+e.date.split("-").reverse().join("/")+'</span><span class="qty">'+(e.weight?e.weight.toFixed(1).replace(".",",")+" kg":"")+(e.steps?" · "+e.steps.toLocaleString("it-IT")+" passi":"")+'</span></div>').join("")||'<div class="note">Nessuna registrazione.</div>'}
+saveTrack.onclick=()=>{let w=parseFloat(weight.value.replace(",",".")),s=parseInt(steps.value.replace(/\D/g,"")),E=LS("f88:track",[]),e={date:dateKey()};if(w>0)e.weight=w;if(s>0)e.steps=s;if(!e.weight&&!e.steps)return;E=[...E.filter(x=>x.date!==e.date),e].sort((a,b)=>a.date.localeCompare(b.date));SS("f88:track",E);weight.value="";steps.value="";stats()};
+function renderChart(E){let P=E.filter(e=>e.weight).slice(-14),svg=document.getElementById("chart");if(P.length<2){svg.innerHTML='<text x="160" y="65" text-anchor="middle" fill="#858178" font-size="11">Servono almeno 2 pesi</text>';return}let ws=P.map(x=>x.weight),mn=Math.min(...ws)-.4,mx=Math.max(...ws)+.4,x=i=>10+i*(300/(P.length-1)),y=v=>105-(v-mn)/(mx-mn)*90,pts=P.map((p,i)=>x(i)+","+y(p.weight)).join(" ");svg.innerHTML='<polyline points="'+pts+'" fill="none" stroke="#d2aa78" stroke-width="2"/>'+P.map((p,i)=>'<circle cx="'+x(i)+'" cy="'+y(p.weight)+'" r="3" fill="#121210" stroke="#d2aa78" stroke-width="2"/>').join("")}stats();
+function renderShop(){let C=LS("f88:shop",[]),all=[];shopList.innerHTML=Object.entries(SHOP).map(([cat,items])=>{let rows=items.map(([n,q])=>{let id=cat+"|"+n;all.push(id);return '<div class="checkrow"><button class="check '+(C.includes(id)?"on":"")+'" data-id="'+id.replace(/"/g,"&quot;")+'"></button><span class="'+(C.includes(id)?"done":"")+'">'+n+'</span><span class="qty">'+q+'</span></div>'}).join("");return '<div class="card listcat"><h3>'+cat+'</h3>'+rows+"</div>"}).join("");shopList.querySelectorAll("button").forEach(b=>b.onclick=()=>{let id=b.dataset.id,c=LS("f88:shop",[]);c=c.includes(id)?c.filter(x=>x!==id):[...c,id];SS("f88:shop",c);renderShop()});let pct=all.length?Math.round(100*C.filter(x=>all.includes(x)).length/all.length):0;shopPct.textContent=pct+"%";shopBar.style.width=pct+"%"}renderShop();resetShop.onclick=()=>{SS("f88:shop",[]);renderShop()};
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}))}
+</script>
+</body></html>
