@@ -1,7 +1,7 @@
 {
-  "name": "FORM 88 v2",
+  "name": "FORM 88 v2.1",
   "short_name": "FORM 88",
-  "description": "Protocollo alimentare personale con Meal Builder, ricette, tracking e gamification sana.",
+  "description": "Piano personale con Meal Builder, catalogo alimenti, spesa, ricette, tracking e premi.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
